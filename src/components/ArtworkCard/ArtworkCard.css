@@ -1,0 +1,56 @@
+/* Squelette pour l'image */
+.skeleton-image {
+    width: 100%;
+    height: 200px; /* Hauteur fixe */
+    background-color: #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Squelette pour le texte */
+.skeleton-text {
+    width: 60%;
+    height: 15px;
+    background-color: #ccc;
+    margin: 5px 0;
+    border-radius: 5px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-h2 {
+    display: inline-block;
+    width: 20rem; /* Ajuste automatiquement à la taille du texte */
+    padding: 0.5rem 1rem; /* Ajoute un peu d'espace autour */
+    background-color: #ccc;
+    border-radius: 4px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Positionnement du texte */
+.carousel-item p {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Un peu de style pour l'image quand elle est affichée */
+.image-container img {
+    width: 100%;
+    height: 200px; /* Garder la même hauteur */
+    object-fit: cover; /* Pour que l'image ne déforme pas */
+    border-radius: 8px;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
