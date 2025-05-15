@@ -11,7 +11,7 @@ function ArtworkCard({ title, image, isLoading }: Props) {
         <div className="carousel-item">
             <div className="image-container">
                 {isLoading ? (
-                    <div className="skeleton skeleton-image"></div>
+                    <div className="skeleton skeleton-image" data-testid="artwork-loading"></div>
                 ) : (
                     <img src={image} alt={title} />
                 )}

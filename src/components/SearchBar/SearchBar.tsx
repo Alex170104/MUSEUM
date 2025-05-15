@@ -31,7 +31,7 @@ function SearchBar({ onSearch }: { onSearch: (query: string) => void }) {
     };
 
     const handleResultClick = (id: number) => {
-        navigate(`/produit?query=${id}`);
+        navigate(`/produit/${id}`);
     };
 
     return (

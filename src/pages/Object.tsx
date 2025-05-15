@@ -1,14 +1,14 @@
-import { useLocation } from "react-router-dom";
+import {useParams} from "react-router-dom";
 
 function Produit() {
-    const location = useLocation();
-    const queryParams = new URLSearchParams(location.search);
-    const query = queryParams.get("query");
+    const {id} = useParams<{id:string}>();
+    console.log(id);
+
 
     return (
         <div>
             <h1>Page Produit</h1>
-            <p>Recherche effectuée pour : {query}</p>
+            <p>Recherche effectuée pour: {id}</p>
         </div>
     );
 }
