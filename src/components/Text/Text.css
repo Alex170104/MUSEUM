@@ -1,0 +1,15 @@
+.text-container {
+    background-color: #344E41; /* Même couleur de fond que le Header */
+    color: #fff; /* Texte en blanc */
+    padding: 3rem; /* Espacement interne */
+    text-align: center; /* Centrer le texte */
+}
+
+.text-container h1 {
+    font-size: 2.5rem;
+}
+
+.text-container p {
+    font-size: 1.2rem; /* Taille de police pour le paragraphe */
+    margin: 0; /* Supprime les marges par défaut */
+}
