@@ -8,17 +8,7 @@ body {
   background: #DAD7CD;
   color: #222;
   align-items: flex-start;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  background: #333;
-  color: #fff;
-  padding: 16px 32px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15)
+  height: 100%;
 }
 
 .gallery {

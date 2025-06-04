@@ -5,6 +5,7 @@ import Introduction from "./components/Introduction/Introduction.tsx";
 import Gallery from "./components/Gallery/Gallery.tsx";
 import SearchBar from "./components/SearchBar/SearchBar";
 import Produit from "./pages/Object.tsx";
+import Search from "./pages/Search.tsx";
 import Footer from "./components/Footer/Footer.tsx";
 import Text from "./components/Text/Text.tsx";
 
@@ -23,7 +24,6 @@ function App() {
                         element={
                             <>
                                 <Header />
-
                                 <Outlet />
                             </>
                         }>
@@ -37,6 +37,7 @@ function App() {
                         } />
 
                         <Route path="/produit/:id" element={<Produit />} />
+                        <Route path="/search" element={<Search />} />
                     </Route>
 
                 </Routes>
