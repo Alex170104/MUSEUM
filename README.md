@@ -1,54 +1,37 @@
-# React + TypeScript + Vite
+# 🏛️ MUSEUM – Explorateur d'Art du MET Museum
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue dans **MUSEUM**, une application web moderne permettant d'explorer les œuvres d'art du MET Museum (Metropolitan Museum of Art) via leur API. Conçu avec **React + Vite**, ce projet met l'accent sur une **expérience utilisateur immersive**, un **design futuriste**, et une **navigation fluide** entre les différents départements artistiques.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Fonctionnalités
 
-## Expanding the ESLint configuration
+- 🎨 Affichage dynamique des œuvres par **département artistique**
+- 🔍 Barre de recherche intuitive pour filtrer les œuvres
+- 🖼️ Affichage détaillé des œuvres avec image, titre, artiste, date, etc.
+- 🧭 Navigation fluide avec **carousel horizontal moderne**
+- 📱 Responsive design pour mobile, tablette et desktop
+- ⚡ Performances optimisées grâce à **Vite**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Frontend** : [React](https://reactjs.org/), [Vite](https://vitejs.dev/)
+- **Design** : TailwindCSS (ou autre lib selon ton setup)
+- **API** : [MET Museum Public API](https://metmuseum.github.io/)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📦 Installation
+
+```bash
+# Clone le repo
+git clone https://github.com/Alex170104/MUSEUM.git
+cd MUSEUM
+
+# Installe les dépendances
+npm install
+
+# Lance le serveur de développement
+npm run dev
